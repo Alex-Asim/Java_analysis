@@ -1,5 +1,4 @@
 // File of the controller
-
 package net.javaguides.sms.controller;
 
 import net.javaguides.sms.dto.StudentDto;
@@ -12,7 +11,6 @@ import java.util.List;
 
 @Controller
 public class StudentController {
-
     private StudentService studentService;
 
     public StudentController(StudentService studentService) {
@@ -26,5 +24,4 @@ public class StudentController {
         model.addAttribute("students", students);
         return "students";
     }
-
 }
