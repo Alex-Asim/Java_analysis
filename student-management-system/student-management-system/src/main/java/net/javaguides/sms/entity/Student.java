@@ -1,6 +1,5 @@
 package net.javaguides.sms.entity;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
