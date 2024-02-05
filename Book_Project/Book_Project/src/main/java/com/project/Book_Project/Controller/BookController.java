@@ -27,7 +27,7 @@ public class BookController {
 
     @PutMapping("/{id}")
     public ResponseEntity<BookDto> updateBook(@PathVariable (name="id") long id, @RequestBody BookDto updateBook){
-//      Book Service has already a method for updating a book.
+    //  Book Service has already a method for updating a book.
         return new ResponseEntity<BookDto>(bookService.updateBook(id), HttpStatus.OK);
     }
 
@@ -36,5 +36,4 @@ public class BookController {
         bookService.deleteMovieById(id);
         return new ResponseEntity<>("The book has been succesfully deleted.",HttpStatus.OK);
     }
-
 }
